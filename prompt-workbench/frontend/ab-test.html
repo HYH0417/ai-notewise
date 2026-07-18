@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/B 测试 - Prompt 工程工作台</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>提示词工程工作台</h1>
+            <nav>
+                <a href="/">仪表盘</a>
+                <a href="/prompts">提示词列表</a>
+                <a href="/prompt-edit">添加提示词</a>
+                <a href="/favorites">我的收藏</a>
+                <a href="/settings">设置</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">A/B 测试</h2>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="form-group">
+                    <label>选择提示词 A *</label>
+                    <select id="prompt-a-select" class="form-control" onchange="loadPromptAVersions()">
+                        <option value="">请选择提示词</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>选择版本 A *</label>
+                    <select id="version-a-select" class="form-control">
+                        <option value="">请先选择 Prompt</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>选择提示词 B *</label>
+                    <select id="prompt-b-select" class="form-control" onchange="loadPromptBVersions()">
+                        <option value="">请选择提示词</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>选择版本 B *</label>
+                    <select id="version-b-select" class="form-control">
+                        <option value="">请先选择 Prompt</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>测试输入 *</label>
+                <textarea id="test-input" class="form-control" rows="5" placeholder="输入测试内容，将替换 Prompt 中的 {{input}} 变量"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>选择模型配置</label>
+                <select id="model-config-select" class="form-control">
+                    <option value="">使用默认配置</option>
+                </select>
+            </div>
+            
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                <button class="btn btn-primary" onclick="runABTest()">运行 A/B 测试</button>
+            </div>
+        </div>
+
+        <div id="results-card" class="card" style="display: none;">
+            <div class="card-header">
+                <h2 class="card-title">测试结果</h2>
+            </div>
+            
+            <div class="ab-test-results">
+                <div class="ab-test-panel version-a">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <h4>版本 A</h4>
+                        <div class="rating-input" id="rating-a-input">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                    </div>
+                    <div class="output" id="output-a"></div>
+                </div>
+                
+                <div class="ab-test-panel version-b">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <h4>版本 B</h4>
+                        <div class="rating-input" id="rating-b-input">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                    </div>
+                    <div class="output" id="output-b"></div>
+                </div>
+            </div>
+            
+            <div class="form-group" style="margin-top: 20px;">
+                <label>评价</label>
+                <textarea id="evaluation" class="form-control" rows="3" placeholder="输入对测试结果的评价..."></textarea>
+            </div>
+            
+            <div style="display: flex; gap: 10px; margin-top: 15px;">
+                <button class="btn btn-success" onclick="saveTestResult()">保存测试结果</button>
+                <button class="btn btn-secondary" onclick="resetTest()">重新测试</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">测试历史记录</h2>
+            </div>
+            <div id="test-history"></div>
+        </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/ab-test.js"></script>
+</body>
+</html>

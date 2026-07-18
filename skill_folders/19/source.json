@@ -1,0 +1,10 @@
+{
+  "title": "RAG 系统优化",
+  "category": "知识库",
+  "tags": [
+    "RAG",
+    "重排",
+    "知识库"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/retrieval_augmented_generation/guide.ipynb"
+}

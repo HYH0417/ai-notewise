@@ -1,0 +1,10 @@
+{
+  "title": "可观测 Agent",
+  "category": "运营",
+  "tags": [
+    "GitHub",
+    "CI",
+    "监控"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/claude_agent_sdk/02_The_observability_agent.ipynb"
+}

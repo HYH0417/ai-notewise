@@ -1,0 +1,10 @@
+{
+  "title": "上下文增强检索",
+  "category": "知识库",
+  "tags": [
+    "RAG",
+    "检索",
+    "上下文"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/contextual-embeddings/guide.ipynb"
+}

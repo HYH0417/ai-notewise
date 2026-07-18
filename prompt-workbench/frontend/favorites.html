@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收藏 - Agent Skills Library</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agent Skills Library</h1>
+            <nav>
+                <a href="/">总览</a>
+                <a href="/prompts">Skills</a>
+                <a href="/prompt-edit">新增 Skill</a>
+                <a href="/favorites" class="active">收藏</a>
+                <a href="/help" class="help-link" title="如何使用 Skills">?</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">Pinned skills</p>
+                <h2>收藏的 Agent Skills</h2>
+            </div>
+            <span id="favorite-count" class="tag">0 条</span>
+        </section>
+        <section id="favorite-list" class="grid grid-2"></section>
+    </main>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/favorites.js"></script>
+</body>
+</html>

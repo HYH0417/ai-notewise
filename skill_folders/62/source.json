@@ -1,0 +1,10 @@
+{
+  "title": "Playwright MCP",
+  "category": "开发效率",
+  "tags": [
+    "浏览器",
+    "测试",
+    "自动化"
+  ],
+  "source": "https://github.com/microsoft/playwright-mcp"
+}

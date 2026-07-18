@@ -1,0 +1,10 @@
+{
+  "title": "视觉能力最佳实践",
+  "category": "办公",
+  "tags": [
+    "图片",
+    "视觉",
+    "识别"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/multimodal/best_practices_for_vision.ipynb"
+}

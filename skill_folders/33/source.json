@@ -1,0 +1,10 @@
+{
+  "title": "评测体系构建",
+  "category": "运营",
+  "tags": [
+    "评测",
+    "指标",
+    "质量"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/misc/building_evals.ipynb"
+}

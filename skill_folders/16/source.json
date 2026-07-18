@@ -1,0 +1,10 @@
+{
+  "title": "前端审美生成 Skill",
+  "category": "代码",
+  "tags": [
+    "前端",
+    "设计",
+    "UI"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/coding/prompting_for_frontend_aesthetics.ipynb"
+}

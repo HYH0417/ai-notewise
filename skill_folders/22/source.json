@@ -1,0 +1,10 @@
+{
+  "title": "研究简报 Agent",
+  "category": "产品",
+  "tags": [
+    "调研",
+    "搜索",
+    "简报"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/claude_agent_sdk/00_The_one_liner_research_agent.ipynb"
+}

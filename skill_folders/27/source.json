@@ -1,0 +1,10 @@
+{
+  "title": "会话浏览器构建",
+  "category": "工具",
+  "tags": [
+    "会话",
+    "历史",
+    "管理"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/claude_agent_sdk/05_Building_a_session_browser.ipynb"
+}

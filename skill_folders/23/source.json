@@ -1,0 +1,10 @@
+{
+  "title": "多 Agent 总协调",
+  "category": "运营",
+  "tags": [
+    "多 Agent",
+    "协调",
+    "规划"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/claude_agent_sdk/01_The_chief_of_staff_agent.ipynb"
+}

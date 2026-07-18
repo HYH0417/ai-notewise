@@ -1,0 +1,10 @@
+{
+  "title": "工具增强复杂推理",
+  "category": "工具",
+  "tags": [
+    "推理",
+    "工具",
+    "证据"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/extended_thinking/extended_thinking_with_tool_use.ipynb"
+}

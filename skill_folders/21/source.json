@@ -1,0 +1,10 @@
+{
+  "title": "自然语言转 SQL",
+  "category": "办公",
+  "tags": [
+    "SQL",
+    "数据",
+    "分析"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/text_to_sql/guide.ipynb"
+}

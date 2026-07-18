@@ -1,0 +1,10 @@
+{
+  "title": "程序化工具调用",
+  "category": "工具",
+  "tags": [
+    "工具调用",
+    "API",
+    "效率"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/programmatic_tool_calling_ptc.ipynb"
+}

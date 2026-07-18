@@ -1,0 +1,10 @@
+{
+  "title": "长任务上下文压缩",
+  "category": "工具",
+  "tags": [
+    "上下文",
+    "长期任务",
+    "压缩"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/automatic-context-compaction.ipynb"
+}

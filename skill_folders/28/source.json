@@ -1,0 +1,10 @@
+{
+  "title": "漏洞发现 Agent",
+  "category": "安全",
+  "tags": [
+    "漏洞",
+    "C 语言",
+    "安全"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/claude_agent_sdk/06_The_vulnerability_detection_agent.ipynb"
+}

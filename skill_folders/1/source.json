@@ -1,0 +1,10 @@
+{
+  "title": "代码审查 Agent",
+  "category": "代码",
+  "tags": [
+    "代码",
+    "审查",
+    "质量"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/.claude/agents/code-reviewer.md"
+}

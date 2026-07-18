@@ -1,0 +1,10 @@
+{
+  "title": "图片局部裁剪分析",
+  "category": "办公",
+  "tags": [
+    "图片",
+    "视觉",
+    "文档"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/multimodal/crop_tool.ipynb"
+}

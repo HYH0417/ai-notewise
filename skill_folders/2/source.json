@@ -1,0 +1,10 @@
+{
+  "title": "教程审计 Skill",
+  "category": "办公",
+  "tags": [
+    "审计",
+    "评分",
+    "文档"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/.claude/skills/cookbook-audit/SKILL.md"
+}

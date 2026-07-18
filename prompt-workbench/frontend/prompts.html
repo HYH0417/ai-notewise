@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Agent Skills Library</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agent Skills Library</h1>
+            <nav>
+                <a href="/">总览</a>
+                <a href="/prompts" class="active">Skills</a>
+                <a href="/prompt-edit">新增 Skill</a>
+                <a href="/favorites">收藏</a>
+                <a href="/help" class="help-link" title="如何使用 Skills">?</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">Skill catalog</p>
+                <h2>Agent Skills</h2>
+                <p>按能力、领域和工作流查找可复用的 agent skill。</p>
+            </div>
+            <a class="btn btn-primary" href="/prompt-edit">新增 Skill</a>
+        </section>
+
+        <section class="panel">
+            <div class="toolbar">
+                <input id="search-input" class="form-control" placeholder="搜索 skill 名称、步骤、来源或标签">
+                <button id="search-btn" class="btn btn-primary">关键词搜索</button>
+                <button id="semantic-search-btn" class="btn btn-secondary">语义搜索</button>
+            </div>
+            <div class="toolbar">
+                <select id="scenario-filter"><option value="">全部分类</option></select>
+                <select id="pattern-filter"><option value="">全部模式</option></select>
+                <button id="clear-filters" class="btn btn-outline">清除筛选</button>
+            </div>
+        </section>
+
+        <section id="prompt-list" class="grid grid-2"></section>
+        <div id="pagination" class="toolbar" style="justify-content:center; display:none; margin-top: 18px;">
+            <button id="prev-page" class="btn btn-secondary">上一页</button>
+            <span id="page-info" style="align-self:center;"></span>
+            <button id="next-page" class="btn btn-secondary">下一页</button>
+        </div>
+    </main>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/prompts.js"></script>
+</body>
+</html>

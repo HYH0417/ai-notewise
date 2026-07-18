@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何使用 Skills - Agent Skills Library</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agent Skills Library</h1>
+            <nav>
+                <a href="/">总览</a>
+                <a href="/prompts">Skills</a>
+                <a href="/prompt-edit">新增 Skill</a>
+                <a href="/favorites">收藏</a>
+                <a href="/help" class="help-link active" title="如何使用 Skills">?</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">User guide</p>
+                <h2>下载后的 Agent Skill 怎么用</h2>
+                <p>这个页面给第一次下载 Skill 的人看：你可以把 Skill 理解成给 AI Agent 的一份工作说明书，里面通常包含目标、适用场景、输入要求、执行步骤、输出格式和验收标准。</p>
+            </div>
+            <a class="btn btn-primary" href="/prompts">浏览 Skills</a>
+        </section>
+
+        <section class="panel help-content">
+            <article>
+                <h3>1. 先选择合适的 Skill</h3>
+                <p>在 Skills 页面用搜索框输入你的任务关键词，例如“竞品调研”“PRD”“代码审查”“PPT”“运营”。也可以用分类筛选，只看产品、代码、办公、PPT、运营等方向。每张卡片下方都有简介、分类和标签，用来判断它是不是适合当前任务。</p>
+            </article>
+
+            <article>
+                <h3>2. 下载 ZIP 并解压</h3>
+                <p>进入详情页后点击“下载 ZIP”。解压后通常会看到 <code>SKILL.md</code>，有些 Skill 还会带模板、示例、检查清单或参考文件。最重要的是先打开 <code>SKILL.md</code>，这是 Agent 真正需要阅读的说明。</p>
+            </article>
+
+            <article>
+                <h3>3. 把 Skill 交给你的 AI 工具</h3>
+                <ol>
+                    <li>如果你使用支持附件的聊天工具，把整个文件夹或 <code>SKILL.md</code> 上传进去。</li>
+                    <li>如果你使用本地 Agent，把 Skill 文件夹放进项目目录，例如 <code>skills/product-research/</code>。</li>
+                    <li>如果工具支持自定义指令，可以把 <code>SKILL.md</code> 的内容粘贴到指令区，或者让 Agent “先阅读这个 Skill，再开始执行任务”。</li>
+                </ol>
+            </article>
+
+            <article>
+                <h3>4. 给 Agent 一个清楚的启动指令</h3>
+                <p>不要只说“使用这个 Skill”。更好的启动方式是把任务背景、目标用户、输入材料和期望输出一起给它。</p>
+                <pre class="content-block">请先阅读并遵循这个 Skill。
+我的任务：为一款 C 端待办产品做竞品调研。
+目标用户：一二线城市的知识工作者。
+我已有材料：产品想法、目标功能列表、3 个竞品名称。
+请输出：竞品表格、机会点、风险、MVP 建议，以及下一步验证计划。</pre>
+            </article>
+
+            <article>
+                <h3>5. 按输入要求补材料</h3>
+                <p>多数 Skill 会列出需要的输入。产品类 Skill 常见输入包括目标用户、使用场景、核心功能、竞品链接、业务目标、上线时间、约束条件。代码类 Skill 常见输入包括仓库路径、相关文件、错误日志、测试命令和期望行为。</p>
+            </article>
+
+            <article>
+                <h3>6. 用输出格式检查结果</h3>
+                <p>一个好 Skill 不只是让 Agent “想一想”，还会要求固定输出结构。拿到结果后，重点检查三件事：有没有覆盖全部输入、有没有可执行下一步、有没有清楚标注假设和风险。如果结果太泛，可以要求它“按 Skill 的验收标准重新补齐”。</p>
+            </article>
+
+            <article>
+                <h3>7. 根据你的场景改造 Skill</h3>
+                <p>下载后的 Skill 可以直接改。做 C 端产品时，建议把你的目标人群、北极星指标、商业约束、上线节奏、常用竞品和数据口径写进 Skill。这样同一个 Skill 反复使用时，会越来越贴近你的产品语境。</p>
+            </article>
+
+            <article>
+                <h3>8. 常见问题</h3>
+                <ul>
+                    <li>Agent 没有按 Skill 做：让它先复述 Skill 的执行步骤，再继续任务。</li>
+                    <li>输出太空：补充真实材料，例如截图、链接、指标、用户访谈记录或错误日志。</li>
+                    <li>结果无法落地：要求它按“今天能做、这周能做、需要更多信息”重新拆分。</li>
+                    <li>一个 Skill 不够用：可以先用产品调研 Skill，再接 PRD、MVP 裁剪、埋点、A/B 实验等 Skill 串起来。</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

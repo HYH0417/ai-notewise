@@ -1,0 +1,10 @@
+{
+  "title": "法律文档总结",
+  "category": "办公",
+  "tags": [
+    "总结",
+    "法律",
+    "文档"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/summarization/guide.ipynb"
+}

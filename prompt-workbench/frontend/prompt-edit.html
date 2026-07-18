@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑 Skill - Agent Skills Library</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agent Skills Library</h1>
+            <nav>
+                <a href="/">总览</a>
+                <a href="/prompts">Skills</a>
+                <a href="/prompt-edit" class="active">新增 Skill</a>
+                <a href="/favorites">收藏</a>
+                <a href="/help" class="help-link" title="如何使用 Skills">?</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">Skill editor</p>
+                <h2 id="page-title">新增 Agent Skill</h2>
+            </div>
+            <a class="btn btn-secondary" href="/prompts">返回列表</a>
+        </section>
+
+        <form id="prompt-form" class="panel">
+            <input type="hidden" id="prompt-id">
+            <div class="grid grid-2">
+                <div class="form-group">
+                    <label for="title">Skill 名称 *</label>
+                    <input id="title" class="form-control" required placeholder="例如：Code Review Agent">
+                </div>
+                <div class="form-group">
+                    <label for="scenario">分类 *</label>
+                    <select id="scenario" class="form-control" required></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="model">适用 agent / 模型</label>
+                <input id="model" class="form-control" placeholder="例如：Claude Code, Codex, general LLM agent">
+            </div>
+            <div class="form-group">
+                <label for="tags">标签，逗号分隔</label>
+                <input id="tags" class="form-control" placeholder="tool-use, evaluation, github">
+            </div>
+            <div class="form-group">
+                <label for="content">Skill 内容 *</label>
+                <textarea id="content" required placeholder="写明触发场景、输入、执行步骤、输出格式、验证标准、来源链接。"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="change-note">版本说明</label>
+                <input id="change-note" class="form-control" placeholder="初始导入 / 补充来源 / 优化步骤">
+            </div>
+            <div class="toolbar">
+                <button class="btn btn-primary" type="submit">保存</button>
+                <button class="btn btn-secondary" type="button" id="detect-btn">识别标签</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/prompt-edit.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "title": "内容审核过滤器",
+  "category": "安全",
+  "tags": [
+    "审核",
+    "规则",
+    "分类"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/misc/building_moderation_filter.ipynb"
+}

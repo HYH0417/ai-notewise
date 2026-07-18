@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<body style="margin:0;background:#111;display:grid;place-items:center;width:100vw;height:100vh;overflow:hidden">
+<video id="video" muted playsinline style="max-width:100vw;max-height:100vh"></video>
+<script>
+const params = new URLSearchParams(location.search);
+const video = document.getElementById("video");
+video.src = params.get("src");
+video.addEventListener("loadedmetadata", () => {
+  video.currentTime = Number(params.get("t") || 0);
+});
+video.addEventListener("seeked", () => {
+  document.body.dataset.ready = "true";
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "title": "知识图谱构建 Skill",
+  "category": "知识库",
+  "tags": [
+    "知识图谱",
+    "实体抽取",
+    "RAG"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/knowledge_graph/guide.ipynb"
+}

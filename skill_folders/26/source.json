@@ -1,0 +1,10 @@
+{
+  "title": "Agent SDK 迁移",
+  "category": "代码",
+  "tags": [
+    "迁移",
+    "SDK",
+    "工具"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/claude_agent_sdk/04_migrating_from_openai_agents_sdk.ipynb"
+}

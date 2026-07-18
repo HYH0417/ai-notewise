@@ -1,0 +1,10 @@
+{
+  "title": "批处理任务 Skill",
+  "category": "运营",
+  "tags": [
+    "批处理",
+    "异步",
+    "成本"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/misc/batch_processing.ipynb"
+}

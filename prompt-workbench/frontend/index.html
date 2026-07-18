@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Skills Library</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agent Skills Library</h1>
+            <nav>
+                <a href="/" class="active">总览</a>
+                <a href="/prompts">Skills</a>
+                <a href="/prompt-edit">新增 Skill</a>
+                <a href="/favorites">收藏</a>
+                <a href="/help" class="help-link" title="如何使用 Skills">?</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">Collected playbooks for AI agents</p>
+                <h2>把可复用的 agent 能力沉淀成技能库</h2>
+                <p>收集、检索、收藏和维护高质量 Agent Skills，包含适用场景、执行流程、输入输出、验证标准与来源链接。</p>
+            </div>
+            <a class="btn btn-primary" href="/prompt-edit">新增 Skill</a>
+        </section>
+
+        <section class="grid grid-4" style="margin-bottom: 18px;">
+            <div class="stat-card"><div class="stat-value" id="total-prompts">0</div><div class="stat-label">Skills 总数</div></div>
+            <div class="stat-card"><div class="stat-value" id="weekly-new">0</div><div class="stat-label">本周新增</div></div>
+            <div class="stat-card"><div class="stat-value" id="avg-rating">0.0</div><div class="stat-label">平均评分</div></div>
+            <div class="stat-card"><div class="stat-value" id="popular-scenario">-</div><div class="stat-label">热门分类</div></div>
+        </section>
+
+        <section class="panel">
+            <div class="toolbar">
+                <input id="quick-search" class="form-control" placeholder="搜索：代码审查、RAG、工具调用、多 agent 协作、SRE 事件响应...">
+                <button id="quick-search-btn" class="btn btn-primary">搜索</button>
+            </div>
+            <div id="quick-search-results" class="grid grid-2"></div>
+        </section>
+
+        <section class="grid grid-2">
+            <div class="panel">
+                <div class="page-head"><h2>最近更新</h2><a class="btn btn-secondary" href="/prompts">全部</a></div>
+                <div id="recent-prompts" class="grid"></div>
+            </div>
+            <div class="panel">
+                <div class="page-head"><h2>高频使用</h2><a class="btn btn-secondary" href="/prompts">全部</a></div>
+                <div id="popular-prompts" class="grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

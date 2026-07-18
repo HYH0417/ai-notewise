@@ -1,0 +1,10 @@
+{
+  "title": "合成测试数据生成",
+  "category": "运营",
+  "tags": [
+    "测试数据",
+    "评测",
+    "样例"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/misc/generate_test_cases.ipynb"
+}

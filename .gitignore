@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Database & data files
+*.db
+*.sqlite
+vector_db/
+
+# Secrets
+*.key
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Zip
+*.zip
+
+# Video frames
+video_frames/

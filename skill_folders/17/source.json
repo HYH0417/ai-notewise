@@ -1,0 +1,10 @@
+{
+  "title": "分类系统构建",
+  "category": "办公",
+  "tags": [
+    "分类",
+    "RAG",
+    "工单"
+  ],
+  "source": "https://github.com/anthropics/claude-cookbooks/blob/main/capabilities/classification/guide.ipynb"
+}
